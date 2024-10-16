@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
 	title: 'About Us | Star Auto Sales | High Quality Used Cars in London',
 	description:
@@ -24,7 +26,7 @@ const AboutPage = () => {
 					<div className="mt-12 max-w-3xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-2">
 						<div className="flex flex-col">
 							<div className="flex-shrink-0">
-								<img
+								<Image
 									className="h-48 w-full object-cover rounded-md"
 									src="/assets/abus1.png"
 									alt="About Us Image 1"
@@ -43,7 +45,7 @@ const AboutPage = () => {
 						</div>
 						<div className="flex flex-col">
 							<div className="flex-shrink-0">
-								<img
+								<Image
 									className="h-48 w-full object-cover rounded-md"
 									src="/assets/abus2.png"
 									alt="About Us Image 2"

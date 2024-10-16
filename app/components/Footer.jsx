@@ -94,6 +94,7 @@ const Footer = () => {
 						height={225}
 						className="-mt-5"
 						src="/assets/logo.png"
+						alt="logo"
 					/>
 					<p className="text-sm font-normal mb-2 text-center">
 						© 2024 | All Rights Reserved

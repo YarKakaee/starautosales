@@ -2,7 +2,7 @@
 
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
 
-const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+const Pagination = ({ currentPage, totalPages, onPageChange, view }) => {
 	const pageNumbers = [];
 
 	for (let i = 1; i <= totalPages; i++) {
@@ -13,7 +13,8 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
 		onPageChange(pageNumber);
 
 		// Scroll to the top of the cards
-		window.scrollTo({ top: 880, behavior: 'smooth' });
+		if (view === 'admin') window.scrollTo({ top: 0, behavior: 'smooth' });
+		else window.scrollTo({ top: 880, behavior: 'smooth' });
 	};
 	return (
 		<div className="mx-auto lg:mx-0 flex items-center justify-between">

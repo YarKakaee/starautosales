@@ -21,6 +21,7 @@ const Nav = () => {
 					height={155}
 					className=""
 					src="/assets/logo.png"
+					alt="logo"
 				/>
 			</Link>
 			<div className="relative sm:hidden">

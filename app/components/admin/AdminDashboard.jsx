@@ -10,7 +10,7 @@ const AdminDashboard = () => {
 		<section className="px-4 sm:px-6 md:px-24 lg:px-32 xl:px-48 2xl:px-64 pb-6 bg-lwhite text-dblue pt-40">
 			<div>
 				{/* Flex container for heading and buttons */}
-				<div className="sm:flex justify-between items-center mb-80">
+				<div className="sm:flex justify-between items-center mb-96">
 					<h1 className="text-3xl mt-5 mb-3 md:my-4 font-bold 2xl:text-4xl">
 						Admin Dashboard
 					</h1>
