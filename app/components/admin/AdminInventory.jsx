@@ -1,13 +1,9 @@
 import authOptions from '@/app/auth/authOptions';
-import prisma from '@/prisma/client';
 import { getServerSession } from 'next-auth';
-import InventoryCard from '../Inventory/InventoryCard';
 import AdminInventorySection from './AdminInventorySection';
 
 const AdminInventory = async () => {
 	const session = await getServerSession(authOptions);
-
-	const cars = await prisma.car.findMany();
 
 	if (!session) return null;
 
