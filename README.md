@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# StarAutoSales.ca - A Used Car Dealership Website 🚗
 
-## Getting Started
+Welcome to the repository for **StarAutoSales.ca**, a professional website built for a used car dealership. This platform provides a seamless browsing experience for customers looking for reliable and affordable used vehicles. It also includes robust admin tools for managing inventory and user interactions.
 
-First, run the development server:
+## Features ✨
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-   **Dynamic Vehicle Listings**: Showcase cars with images, descriptions, and specifications.
+-   **User Authentication**: Secure login and account management with admin privileges.
+-   **Responsive Design**: Fully optimized for mobile, tablet, and desktop devices.
+-   **Admin Panel**: Manage car listings, user accounts, and site content.
+-   **Modern UI/UX**: Sleek and intuitive design powered by Tailwind CSS.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack 🛠️
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The project leverages a modern technology stack for performance, scalability, and developer-friendly workflows:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+-   **Next.js**: Framework for server-side rendering and routing.
+-   **React.js**: Front-end library for building interactive user interfaces.
+-   **Tailwind CSS**: Utility-first framework for fast and responsive styling.
+-   **Prisma**: Object-Relational Mapping (ORM) tool for managing the database.
+-   **PostgreSQL**: Reliable and robust database solution.
+-   **NextAuth.js**: Authentication library for user login and admin privileges.
 
-## Learn More
+## Getting Started 🚀
 
-To learn more about Next.js, take a look at the following resources:
+Follow these steps to set up the project locally:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+-   Node.js (v16 or higher)
+-   PostgreSQL
+-   Git
 
-## Deploy on Vercel
+### Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/starautosales.git
+    cd starautosales
+    ```
