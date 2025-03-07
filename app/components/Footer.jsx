@@ -101,7 +101,7 @@ const Footer = () => {
 					</p>
 					<p className="text-sm font-bold text-center">
 						<Link href="https://www.linkedin.com/in/yar-kakaee/">
-							Developed by Yar K
+							Developed by Yar Kakaee
 						</Link>
 					</p>
 				</div>
