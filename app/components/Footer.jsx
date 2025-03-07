@@ -97,7 +97,7 @@ const Footer = () => {
 						alt="logo"
 					/>
 					<p className="text-sm font-normal mb-2 text-center">
-						© 2024 | All Rights Reserved
+						© 2025 | All Rights Reserved
 					</p>
 					<p className="text-sm font-bold text-center">
 						<Link href="https://www.linkedin.com/in/yar-kakaee/">
