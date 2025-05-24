@@ -1,5 +1,6 @@
 import InventorySection from '@/app/components/InventorySection';
 import NewArrivals from '@/app/components/NewArrivals';
+import FinancingSection from '@/app/components/FinancingSection';
 
 export const metadata = {
 	title: 'Explore Our Inventory | Star Auto Sales | High Quality Used Cars in London',

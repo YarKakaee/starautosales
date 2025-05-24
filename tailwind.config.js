@@ -33,6 +33,49 @@ module.exports = {
 				'4xl': '1px 1px 20px rgba(0, 0, 0, 0.5)',
 				nav: '0px 6px 11px rgba(0, 0, 0, 0.5)',
 			},
+			keyframes: {
+				gradient: {
+					'0%, 100%': {
+						'background-size': '200% 200%',
+						'background-position': 'left center',
+					},
+					'50%': {
+						'background-size': '200% 200%',
+						'background-position': 'right center',
+					},
+				},
+				shimmer: {
+					'0%': {
+						'background-position': '-1000px 0',
+					},
+					'100%': {
+						'background-position': '1000px 0',
+					},
+				},
+				float: {
+					'0%, 100%': {
+						transform: 'translateY(0) translateX(0)',
+						opacity: '0.3',
+					},
+					'25%': {
+						transform: 'translateY(-20px) translateX(10px)',
+						opacity: '0.5',
+					},
+					'50%': {
+						transform: 'translateY(-40px) translateX(-10px)',
+						opacity: '0.3',
+					},
+					'75%': {
+						transform: 'translateY(-20px) translateX(10px)',
+						opacity: '0.5',
+					},
+				},
+			},
+			animation: {
+				gradient: 'gradient 15s ease infinite',
+				shimmer: 'shimmer 8s linear infinite',
+				float: 'float 10s ease-in-out infinite',
+			},
 		},
 	},
 	plugins: [],
