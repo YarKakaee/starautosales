@@ -24,6 +24,7 @@ const InventoryCard = ({ car, view }) => {
 		price,
 		image1,
 		vin,
+		sold,
 	} = car;
 	return (
 		<div
@@ -32,13 +33,22 @@ const InventoryCard = ({ car, view }) => {
 			data-aos-delay="350"
 			data-aos-duration="500"
 		>
+			{/* SOLD Banner */}
+			{sold && (
+				<div className="absolute top-4 left-4 z-10 bg-[#f14747] text-white px-4 py-2 rounded-md font-bold text-lg shadow-lg transform -rotate-12">
+					SOLD!
+				</div>
+			)}
+
 			<div className="w-1/3 xl:w-2/5">
 				<Image
 					src={image1}
 					alt="Card Image"
 					width={1000}
 					height={1000}
-					className="w-full h-2/5 sm:h-full object-cover cursor-pointer absolute sm:w-1/3 xl:w-2/5 overflow-hidden top-0 left-0 right-0 bottom-0 rounded-tl-md rounded-tr-md  sm:rounded-bl-md sm:rounded-tr-none"
+					className={`w-full h-2/5 sm:h-full object-cover cursor-pointer absolute sm:w-1/3 xl:w-2/5 overflow-hidden top-0 left-0 right-0 bottom-0 rounded-tl-md rounded-tr-md  sm:rounded-bl-md sm:rounded-tr-none ${
+						sold ? 'opacity-50' : ''
+					}`}
 				/>
 			</div>
 			<div className="flex flex-col mt-52 sm:ml-28 sm:mt-2 p-8 flex-grow">

@@ -24,6 +24,16 @@ const CarPage = async ({ params }) => {
 						<h1 className="text-center md:text-start text-5xl font-black mt-2">
 							{car.make} {car.model}
 						</h1>
+
+						{/* SOLD Banner */}
+						{car.sold && (
+							<div className="text-center md:text-start mt-4">
+								<div className="inline-block bg-[#f14747] text-white px-6 py-3 rounded-lg font-bold text-xl shadow-lg transform -rotate-2">
+									SOLD!
+								</div>
+							</div>
+						)}
+
 						<div className="flex flex-row justify-between mt-6">
 							<h4
 								data-aos="fade-right"
@@ -48,14 +58,20 @@ const CarPage = async ({ params }) => {
 					</div>
 					<div className="xl:w-2/6">
 						<div className="rounded-md bg-dblue text-lwhite drop-shadow-4xl h-fit px-9 py-10">
-							<h2 className="uppercase opacity-80">Our price</h2>
+							<h2 className="uppercase opacity-80">
+								{car.sold ? 'Status' : 'Our price'}
+							</h2>
 							<div className="flex flex-row">
 								<h1 className="text-4xl font-bold mt-2">
-									$ {car.price.toLocaleString()}
+									{car.sold
+										? 'SOLD'
+										: `$ ${car.price.toLocaleString()}`}
 								</h1>
-								<h2 className="text-lg text-lwhite mt-5 ml-2">
-									+ HST
-								</h2>
+								{!car.sold && (
+									<h2 className="text-lg text-lwhite mt-5 ml-2">
+										+ HST
+									</h2>
+								)}
 							</div>
 						</div>
 						<div className="rounded-md bg-dblue text-lwhite drop-shadow-4xl h-fit p-8 mt-5">
@@ -171,9 +187,11 @@ const CarPage = async ({ params }) => {
 						</div>
 					</div>
 				</div>
-				<div className="mt-16">
-					<InventoryContactForm carData={car} />
-				</div>
+				{!car.sold && (
+					<div className="mt-16">
+						<InventoryContactForm carData={car} />
+					</div>
+				)}
 			</section>
 		</main>
 	);

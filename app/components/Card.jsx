@@ -16,9 +16,17 @@ const Card = ({ car }) => {
 		price,
 		image1,
 		safety,
+		sold,
 	} = car;
 	return (
 		<div className="relative w-full lg:w-76 h-96 bg-white rounded-md drop-shadow-3xl p-5 cursor-pointer text-dblue hover:drop-shadow-4xl transition ease-in-out mb-12">
+			{/* SOLD Banner */}
+			{sold && (
+				<div className="absolute top-2 left-2 z-10 bg-[#f14747] text-white px-3 py-1.5 rounded-md font-bold text-sm shadow-lg transform -rotate-12">
+					SOLD!
+				</div>
+			)}
+
 			<Link href={`/vehicles/${listingId}`}>
 				<div className="h-44 overflow-hidden bg-white top-0 left-0 right-0 absolute rounded-tl-md rounded-tr-md">
 					<Image
@@ -26,7 +34,9 @@ const Card = ({ car }) => {
 						alt="Card Image"
 						width={1000}
 						height={1000}
-						className="w-full h-full object-cover overflow-hidden transition ease-in-out hover:scale-105"
+						className={`w-full h-full object-cover overflow-hidden transition ease-in-out hover:scale-105 ${
+							sold ? 'opacity-50' : ''
+						}`}
 					/>
 				</div>
 				<div className="flex flex-col justify-between mt-40">

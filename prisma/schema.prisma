@@ -41,6 +41,8 @@ model Car {
   image8       String
   image9       String
   image10      String
+  financingAvailable Boolean @default(false)
+  sold              Boolean @default(false)
 }
 
 model Account {
